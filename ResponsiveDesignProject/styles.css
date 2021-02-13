@@ -1,0 +1,9 @@
+* { margin: 0; }
+
+header { background: rgba(0,0,0,.25); margin-bottom: 10px; height: 50px; }
+
+section { background: rgba(0,0,0,.25); margin-bottom: 10px; height: 800px; float: left; width: 69%; margin-right: 10px; }
+
+aside { background: rgba(0,0,0,.25); margin-bottom: 10px; height: 800px; float: right; width: 30%; }
+
+footer { background: rgba(0,0,0,.25); height: 25px; clear: both; }

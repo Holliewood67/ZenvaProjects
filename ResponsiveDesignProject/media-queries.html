@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>CSS Media Queries</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <style>
+         /*applies to EVERYTHING unles overriden*/
+         * { 
+            margin: 0;
+         }
+
+         body {
+            background: rgb(255, 0, 0, 0.25);
+         }
+
+         header {
+            background: rgb(0, 0, 0, 0.25);
+            margin-bottom: 10px;
+            height: 50px;
+         }
+
+         section {
+            background: rgb(0, 0, 0, 0.25);
+            margin-bottom: 10px;
+            height: 1000px;
+
+         }
+
+         aside {
+            background: rgb(0, 0, 0, 0.25);
+            margin-bottom: 10px;
+            height: 1000px;
+            display: none;
+
+         }
+
+         footer {
+            background: rgb(0, 0, 0, 0.25);
+            height: 25px;
+         }
+
+         
+
+         /*BREAKPOINT 1*/
+
+         @media screen and (min-width: 760px) {
+
+         body {
+            background: rgb(0, 255, 0, 0.25);
+         }
+
+         aside {
+            display: block;
+         }
+
+
+         }
+
+         /*BREAKPOINT 2*/
+
+         @media screen and (min-width: 1200px) {
+
+         body {
+            background: rgb(0, 0, 255, 0.25);
+         }
+
+         section {
+            float: left;
+            width: 70%;
+            margin-right: 10px;
+         }
+
+         aside {
+            float: right;
+            width: 30%;
+         }
+
+         footer {
+            clear: both;
+         }
+
+         }
+
+      </style>
+   </head>
+   <body>
+      <header>Header</header>
+      <section>Section</section>
+      <aside>Aside</aside>
+      <footer>Footer</footer>
+   </body>
+</html>
