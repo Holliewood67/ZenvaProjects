@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>CSS Flexbox</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+      <style>
+       
+          * {
+             margin: 0;
+             padding: 0;
+          }
+
+          header {
+             background: rgba(0, 0, 0, 0.25);
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 10px;
+          }
+
+          #logo {
+             width: 100px;
+             height: 50px;
+             background: rgba(0, 0, 0, 0.25);
+          }
+
+          nav {
+            background: rgba(0, 0, 0, 0.25);
+          }
+
+          nav ul li {
+             display: inline;
+          }
+
+          #hero{
+            background: rgba(0, 0, 0, 0.25);
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+          }
+
+          .herographic {
+            background: rgba(0, 0, 0, 0.25);
+          }
+
+          .herographic img {
+             width: 100%;
+          }
+
+          .heroheading {
+            margin: 0 0 10px 10px;
+          }
+
+          .herobutton {
+            background: rgba(0, 0, 0, 0.25);
+            width: 50%;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 0 auto;
+          }
+
+          #articles{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+
+          }
+
+          .articlecontainer {
+            background: rgba(0, 0, 0, 0.25);
+            width: 300px;
+            margin: 0 1em;
+          }
+
+          .articlecontainer img {
+             width: 100%;
+          }
+
+          footer {
+            background: rgba(0, 0, 0, 0.25);
+            height: 50px;
+            text-align: center;
+          }
+       
+      </style>
+       
+   </head>
+    
+   <body>
+      
+       <header>
+
+         <div id="logo"><img src="https://via.placeholder.com/100x50" alt=""></div>
+         <nav>
+            <ul>
+               <li><a href="">Menu Item</a></li>
+               <li><a href="">Menu Item</a></li>
+               <li><a href="">Menu Item</a></li>
+            </ul>
+         </nav>
+
+       </header>
+
+       <section id="hero">
+          
+         <div class="herographic"><img src="https://via.placeholder.com/500x500" alt=""></div>
+         <div style="display: flex; flex-direction:column; justify-content:center;">
+            <div class="heroheading"><h1>Placeholder text for demonstration purposes</h1></div>
+            <div class="herobutton">Hero Button</div>
+         </div>
+
+       </section>
+
+       <section id="articles">
+          
+         <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h2>Article Title</h2>
+            <p>Placeholder text for a paragraph to talk about things regarding the article this represents.</p>
+         </div>
+         <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h2>Article Title</h2>
+            <p>Placeholder text for a paragraph to talk about things regarding the article this represents.</p>
+         </div>
+         <div class="articlecontainer">
+            <img src="https://via.placeholder.com/300x200" alt="">
+            <h2>Article Title</h2>
+            <p>Placeholder text for a paragraph to talk about things regarding the article this represents.</p>
+         </div>
+
+       </section>
+
+       <footer>
+         <nav>
+            <ul>
+               <li><a href="">Menu Item</a></li>
+               <li><a href="">Menu Item</a></li>
+               <li><a href="">Menu Item</a></li>
+            </ul>
+         </nav>
+
+       </footer>
+       
+   </body>
+</html>

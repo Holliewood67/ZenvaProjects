@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>CSS Flexbox</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+      <style>
+       
+            #parent { 
+                background: lightblue; padding: 10px;
+                display: flex; 
+                flex-flow: row nowrap;
+            }
+
+            .childitem {  
+                width: 300px;
+                flex-basis: 300px;
+            }
+            .child1 { 
+                background: cornflowerblue; 
+                flex-shrink: 3;
+            }
+
+            .child2 { 
+                background: deepskyblue; 
+                flex-grow: 1;
+            }
+
+            .child3 { 
+                background: dodgerblue; 
+                flex-shrink: 3;
+            }
+
+            /* .child4 { 
+                background: khaki; 
+            }
+
+            .child5 { 
+                background: orange; 
+            }
+
+            .child6 { 
+                background: gold; 
+            }
+
+            .child7 { 
+                background: darkgreen; 
+            }
+
+            .child8 { 
+                background: darkolivegreen; 
+            }
+
+            .child9 { 
+                background: forestgreen; 
+            } */
+
+
+          
+      </style>
+       
+   </head>
+    
+   <body>
+      
+       <div id="parent">
+       
+            <div class="childitem child1">1</div>
+            <div class="childitem child2">2</div>
+            <div class="childitem child3">3</div>
+            <!-- <div class="childitem child4">4</div>
+            <div class="childitem child5">5</div>
+            <div class="childitem child6">6</div>
+            <div class="childitem child7">7</div>
+            <div class="childitem child8">8</div>
+            <div class="childitem child9">9</div> -->
+
+       
+       </div>
+       
+   </body>
+</html>
